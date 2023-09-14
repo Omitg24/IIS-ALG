@@ -1,0 +1,143 @@
+package Exam;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ * Titulo: Clase GolfNumerico
+ * 
+ * @author Omar Teixeira Gonzalez, UO281847
+ * @version 26/05/2022
+ */
+public class GolfNumerico {
+	
+	/**
+	 * Atributo tablero
+	 */
+	private String[][] board;
+	/**
+	 * Atributo puntos
+	 */
+	private int points;
+	/**
+	 * Atributo hoyos
+	 */
+	private int holes;
+	private int pointsCounter;
+	private int holesCounter;
+	
+	/**
+	 * Método main
+	 * @param args
+	 */
+	public static void main(String[] args) {
+//		String nomFich = args[0];
+//		int points = Integer.valueOf(args[1]);
+//		int holes = Integer.valueOf(args[2]);
+		new GolfNumerico("files/Ejemplo1.txt", 57, 13);
+	}
+
+	/**
+	 * Constructor
+	 * @param nomFich
+	 * @param points
+	 * @param holes
+	 */
+	public GolfNumerico (String nomFich, int points, int holes) {
+		loadBoard(nomFich);
+		this.points=points;
+		this.holes=holes;
+		
+		initialize();
+		showBoard();
+		System.out.println("Points gained: " + pointsCounter);
+		System.out.println("Holes visited: " + holesCounter);
+	}
+	
+	/**
+	 * Método que inicializa el algoritmo	
+	 */
+	private void initialize() {
+		int level=0;
+		backtracking(level);		
+	}
+
+	/**
+	 * Método backtracking
+	 * @param level
+	 */
+	private void backtracking(int level) {
+		holesCounter++;
+		if (level==board.length) {
+			if (points==pointsCounter && holes==holesCounter) {
+				System.out.println("SOLUCIÓN ENCONTRADA");
+			}
+		} else {
+			if (level==0) {
+				pointsCounter+=Integer.valueOf(board[level][]);				
+				backtracking(level+1);
+			} else {
+				for (int i=0; i<board[level].length; i++) {
+					pointsCounter+=Integer.valueOf(board[level][i]);					
+					backtracking(level+1);	
+				}
+			}			
+		}		
+	}
+
+	/**
+	 * Método loadBoard
+	 * @param nomFich
+	 */
+	public void loadBoard (String nomFich) {
+		int lenX=0, lenY=0;
+		int counter = 0;
+	    String linea;	    
+	    String[] filaMatriz= null;	   
+	    
+	    try {
+	    	   BufferedReader fichero = new BufferedReader(new FileReader(nomFich));
+	    	   while (fichero.ready()) {
+	    			linea = fichero.readLine();
+	    			if (!linea.contains(" ")) {
+	    				if (lenX==0) {
+	    					lenX = Integer.valueOf(linea);
+	    				} else if (lenY==0) {
+	    					lenY = Integer.valueOf(linea);
+	    				} 
+	    				if (lenX!=0 && lenY!= 0) {
+	    					board = new String[lenX][lenY];
+	    				}				    			
+	    			} else {
+	    				filaMatriz = linea.split(" ");
+	    				for (int i=0; i<filaMatriz.length; i++) {
+	    					board[counter][i]=filaMatriz[i];
+	    				}
+	    				counter++;	 
+	    			}	    			   			
+	    		}
+	    		fichero.close();
+	    }
+	    catch (FileNotFoundException fnfe) {
+	      System.out.println("El archivo no se ha encontrado.");
+	    }
+	    catch (IOException ioe) {
+	      new RuntimeException("Error de entrada/salida.");
+	    } 
+	  }
+	
+	/**
+	 * Método showBoard
+	 */
+	public void showBoard() {
+		System.out.println("---- TABLERO ----");
+		for (int i=0; i<board.length; i++) {
+			for (int j=0; j<board[i].length; j++) {
+				System.out.print(board[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+}

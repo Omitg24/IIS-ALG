@@ -1,0 +1,50 @@
+Albania: Montenegro, Macedonia, Grecia
+Alemania: Francia, Suiza, Austria, Bélgica, Países Bajos, Luxemburgo, Dinamarca, Polonia, República Checa
+Andorra: España, Francia
+Armenia: Georgia, Turquía, Azerbaiyán
+Austria: Alemania, República Checa, Eslovaquia, Hungría, Eslovenia, Italia, Suiza, Liechtenstein
+Azerbaiyán: Georgia, Rusia, Armenia, Turquía
+Bélgica: Países Bajos, Alemania, Luxemburgo, Francia
+Bielorrusia: Lituania, Letonia, Rusia, Ucrania, Polonia
+Bosnia y Herzegovina: Croacia, Serbia, Montenegro 
+Bulgaria: Rumania, Turquía, Grecia, Macedonia, Serbia, Macedonia
+Chipre: NO
+Ciudad del Vaticano: Italia
+Croacia: Bosnia y Herzegovina, Montenegro, Eslovenia, Hungría, Serbia
+Dinamarca: Alemania
+Eslovaquia: Polonia, República Checa, Austria, Hungría, Ucrania
+Eslovenia: Austria, Hungría, Croacia, Italia
+España: Andorra, Francia, Portugal
+Estonia: Letonia, Rusia
+Finlandia: Rusia, Suecia, Noruega
+Francia: España, Italia, Suiza, Alemania, Luxemburgo, Bélgica, Andorra, Mónaco
+Georgia:  Rusia, Turquía, Armenia, Azerbaiyán
+Grecia: Albania, Bulgaria, Macedonia, Turquía
+Hungría: Eslovaquia, Ucrania, Rumania, Serbia, Croacia, Eslovenia, Austria
+Irlanda: Reino Unido
+Islandia: NO
+Italia: Francia, Suiza, Austria, Eslovenia, Ciudad del Vaticano, San Marino
+Kazajistán: Rusia
+Letonia: Estonia, Rusia, Lituania, Bielorrusia
+Liechtenstein: Suiza, Austria
+Lituania: Letonia, Polonia, Rusia, Bielorrusia
+Luxemburgo: Francia, Alemania, Bélgica
+Macedonia: Serbia, Montenegro, Bulgaria, Grecia, Albania
+Malta: NO
+Moldavia: Rumania, Ucrania
+Mónaco: Francia
+Montenegro: Croacia, Bosnia y Herzegovina, Albania, Serbia, Macedonia
+Noruega: Rusia, Finlandia, Suecia
+Países Bajos: Bélgica, Alemania
+Polonia:  Rusia, Lituania, Bielorrusia, Ucrania, República Checa, Eslovaquia, Alemania
+Portugal: España
+Reino Unido: Irlanda
+República Checa: Polonia, Eslovaquia, Austria, Alemania
+Rumania: Ucrania, Moldavia, Ucrania, Bulgaria, Serbia, Hungría
+Rusia: Noruega, Finlandia, Estonia, Letonia, Bielorrusia, Lituania, Polonia, Ucrania, Georgia, Azerbaiyán, Kazajistán
+San Marino: Italia
+Serbia: Hungría, Rumania, Bulgaria, Macedonia, Bosnia y Herzegovina, Croacia, Montenegro
+Suecia: Noruega, Finlandia
+Suiza: Francia, Alemania, Austria, Liechtenstein, Italia
+Turquía: Grecia, Bulgaria, Georgia, Armenia, Azerbaiyán
+Ucrania: Rusia, Bielorrusia, Polonia, Eslovaquia, Hungría, Rumania, Moldavia
